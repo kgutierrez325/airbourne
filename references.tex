@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{multibib}
+\usepackage{hyperref}
+\newcites{rob}{Robotics Involving Contact}
+\newcites{dyn}{Quadrotor Dynamics}
+\newcites{con}{Control}
+\newcites{aero}{Aerial Dynamics}
+\hypersetup{colorlinks=true,citecolor=red}
+\renewcommand{\refname}{History of Quadrotors}
+\begin{document}
+
+\nocite{*}
+\nocitedyn{*}
+\nocitedyn{*}
+\nocitecon{*}
+\nociteaero{*}
+\nociterob{*}
+\nociterob{*}
+
+
+
+\bibliographystyle{plain}
+\bibliography{bib1}
+
+\bibliographystyledyn{plain}
+\bibliographydyn{bib2}
+
+\bibliographystylecon{plain}
+\bibliographycon{bib3}
+
+\bibliographystyleaero{plain}
+\bibliographyaero{bib4}
+
+\bibliographystylerob{plain}
+\bibliographyrob{bib5}
+
+\end{document}
+
